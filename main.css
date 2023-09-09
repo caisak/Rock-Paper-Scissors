@@ -1,5 +1,15 @@
+* {
+    font-family: 'Shadows Into Light', cursive;
+}
+
 body {
-    background-color: beige;
+    background-color: #6f946f;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-1 {
@@ -19,8 +29,21 @@ body {
 .button-style {
     height: 3rem;
     width: 8rem;
-    background-color:darkorange;
-    border-radius: 10%;
+    background-color:rgb(247, 179, 52);
+    border-radius: 0.5rem;
     border: none;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+
+    .title {
+        margin-left: 2rem;
+    }
 }
